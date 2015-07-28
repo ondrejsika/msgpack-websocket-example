@@ -1,4 +1,6 @@
 import msgpack
+from twisted.web.server import Site
+from twisted.web.static import File
 from twisted.internet import reactor
 from autobahn.twisted.websocket import WebSocketServerProtocol, WebSocketServerFactory
 
@@ -29,6 +31,8 @@ class WSF(WebSocketServerFactory):
     protocol = WSP
 
 
+
+reactor.listenTCP(8000, Site(File('www')))
 reactor.listenTCP(8888, WSF())
 reactor.run()
 
