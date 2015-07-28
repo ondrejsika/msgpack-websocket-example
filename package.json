@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "browserify": "^11.0.0",
+    "msgpack-js-browser": "^0.1.4"
+  }
+}
