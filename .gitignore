@@ -1,0 +1,6 @@
+node_modules
+www/bundle.js
+*.pyc
+*.swp
+.idea
+
